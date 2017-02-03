@@ -8,21 +8,25 @@
 
 <body>
     <p>
-        <%="Arrivé sur la page, raffraichir une fois"%>
+    <form action= "/" method="GET">
+    <input type="text" name="urlLBC"/>
+        <button type="submit">
+            OK
+        </button>
+         </form>
         <br></br>
-        <%="Prix sur le site le bon coin :"+ prix %>
+        <br></br>
+        <%="Prix sur le site le bon coin : "+ prix %>
         <br></br>
         <%="Type de mobilier : " + type%>
         <br></br>
-        <%="ville"+ ":"+" "+ville%>
+        <%="Ville: "+ville%>
         <br></br>
-        <%= "Code postale :"+post%>
+        <%= "Code postale : "+post%>
         <br></br>
-        <%="Nombre de pièces :"+" "+Nbrepiece%>
+        <%="Nombre de pièces : "+" "+Nbrepiece%>
         <br></br>
-        <%="Surface :"+surface%>
-        <br></br>
-        <%="Classe énergétique :"+Classe_EN%>
+        <%="Surface : "+surface%>
         <br></br>
         <%="le prix de la maison au m2 : " + m+" €"%>
         <br></br>
